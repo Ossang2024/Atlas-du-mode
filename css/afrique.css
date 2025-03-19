@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Faculty+Glyphic&family=Gothic+A1&family=League+Spartan:wght@100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Faculty+Glyphic&family=Gothic+A1&family=League+Spartan:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Faculty+Glyphic&family=Gothic+A1&family=League+Spartan:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.section1{
+    background-image: url(../images/afrique4.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.section1 div {
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+}
+
+.section1 h1 {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: "Source Serif 4", serif;
+    font-weight: 500;
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+
+
+
+/* modelisation de la barre de recherche */
+.section2 .form {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section2 .form .recherche {
+    border-radius: 50px;
+    height: 55px;
+    width: 500px;
+    border: solid 2px rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    font-size: 18px;
+    color: rgb(68,76,63);
+    background-color: rgba(255, 255, 255, 0.7);
+    margin: 10px;
+}
+
+.section2 .form .submit {
+    border: none;
+    height: 55px;
+    width: 150px;
+    border-radius: 30px;
+    color: rgb(92,186,60);
+    background-color: rgb(68,76,63);
+    font-size: 18px;
+    transition: ease-in-out 0.5s;
+}
+
+.section2 .form .submit:hover {
+    color: rgb(54, 121, 32);
+}
+
+
+
+
+
+
+
+/* GESTION DU HEADER */
+.section1 header {
+    font-weight: bold;
+    width: 100%;
+    /* position: fixed ; */
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(68,76,63);
+    display: flex;
+}
+
+.section1 header ul {
+    list-style: none;
+    display: flex;
+}
+
+.section1 header ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.section1 header ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 0px 20px;
+    font-size: 20px;
+    margin-top: 10px;
+    transition: ease-in-out 0.5s;
+    display: block;
+    margin: 0px 30px;
+    text-align: center;
+}
+
+.section1 header ul li .dropdown li {
+    display: block;
+}
+
+.section1 header ul li .dropdown {
+    width: 100%;
+    background: rgb(68,76,63);
+    color: rgba(255, 255, 255, 0.7);
+    display: none;
+    z-index: 999;
+    transition: ease-in-out 0.5s;
+    position: absolute;
+    padding-top: 25px ;
+    padding-bottom: 10px;
+}
+
+.section1 header ul a:hover {
+    color: rgb(92,186,60);
+}
+
+.section1 header ul li:hover .dropdown {
+    display: block;
+}
+
+.section1 header ul li:hover .list {
+    display: block;
+}
+
+
+
+
+
+
+
+/* GESTION DE LA DEUXIEME SECTION */
+.section2{
+    background-color: rgb(249,249,249);
+    padding-top: 60px;
+}
+
+.section2 .all {
+    margin: 30px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+}
+
+.section2 h1 {
+    color: rgb(92,186,60);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-family: "Source Serif 4", serif;
+    font-size: 40px;
+    margin-top: 100px;
+}
+
+.section2 .col14 {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+    border-radius: 10px 10px 0px 0px;
+    margin: 20px 20px;
+    max-width: 250px;
+    width: 300px;
+}
+
+.section2 img{
+   width: 250px;
+   height: 250px;
+   max-width: 300px;
+   max-height: 300px;
+   border-radius: 10px 10px 0px 0px;
+}
+
+.section2 .col14 h3 {
+    color: rgb(68,76,63);
+}
+
+.section2 .col14 p {
+    color: rgb(68,76,63);
+    font-weight: normal;
+}
+
+.section2 .col14 .info {
+    padding: 10px;
+}
+
+.section2 .col14 p span {
+    color: rgb(92,186,60);
+}
+
+
+/* pour la barre de recherche */
+
+.section2 .hidden {
+    display: none;
+}
+
+.section2 .searchicon{
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 100px;
+    right: 10px;
+}

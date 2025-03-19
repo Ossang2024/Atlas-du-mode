@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Faculty+Glyphic&family=Gothic+A1&family=League+Spartan:wght@100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Faculty+Glyphic&family=Gothic+A1&family=League+Spartan:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Faculty+Glyphic&family=Gothic+A1&family=League+Spartan:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.cormorant-garamond-regular {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.source-serif-4-uniquifier {
+    font-family: "Source Serif 4", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.section1{
+    background-image: url(../images/fond8.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    height: 100vh;
+}
+
+.div1 {
+    height: 100vh;
+    color: white;
+    box-shadow: 10px -10px 10px rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.7); ;
+    width: 42%;
+    padding: 150px 20px 100px 20px;
+}
+
+.div1 h1 {
+    font-family: "Source Serif 4", serif;
+    font-weight: 500;
+    font-size: 45px;
+    text-transform: uppercase;
+}
+
+.div2{
+    height: 100vh;
+    width: 100%;
+}
+
+
+/* gestion du header */
+.div2 header {
+    width: 100%;
+    /* position: fixed; */
+    background-color: rgb(68,76,63);
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.div2 header ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.div2 header ul a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    transition: ease-in-out 0.1s ;
+    padding: 10px 30px;
+    text-align: center;
+}
+
+.div2 header ul a:hover {
+    color: rgb(92,186,60);
+}
+
+.div2 header ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.div2 header ul li .dropdown li {
+    display: block;
+    text-align: center;
+}
+
+.div2 header ul li .dropdown li a {
+    text-align: center;
+}
+
+.div2 header ul li .dropdown {
+    width: 100%;
+    background: rgb(68,76,63);
+    color: rgba(255, 255, 255, 0.7);
+    display: none;
+    z-index: 999;
+    transition: ease-in-out 0.5s;
+    position: absolute;
+    padding-top: 25px ;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.section1 header ul a:hover {
+    color: rgb(92,186,60);
+}
+
+.section1 header ul li:hover .dropdown {
+    display: block;
+}
+
+
+
+
+
+
+
+.section2 {
+    height: 100vh;
+    padding: 80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.all{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+
+.all div {
+    padding: 50px;
+}
+
+.all div p {
+    font-weight: 400;
+    color: rgb(68,76,63);
+}
+
+.all div h1 {
+    font-weight: 700;
+    font-size: 30px;
+    color: rgb(68,76,63);
+    margin-bottom: 50px;
+}
+
+.all div h1 span {
+    font-size: 40px;
+    font-weight: 700;
+    color: rgb(92,186,60);
+}
+
+.section2 img {
+    height: 500px;
+    width: 500px;
+}
+
+
+
+
+
+
+
+/* GESTION DUF FOOTER */
+.section3 {
+    background-color: rgb(68,76,63);
+    height: 300px;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.section3 h1 {
+    font-weight: 700;
+    font-size: 30px;
+    color: white;
+    margin-bottom: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.section3 div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section3  img {
+    height: 100px;
+    width: 100px;
+    padding: 30px 50px;
+    display: block;
+}
+
+.section3 h1 span {
+    font-size: 40px;
+    font-weight: 700;
+    color: rgb(92,186,60);
+}
+
+
